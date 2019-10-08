@@ -2,15 +2,13 @@
 
 ## Abstract
 
-The existing datasets for evaluating Visual Inertial Odometry (VIO) have boosted the research of autonomous agents, but they don’t meet the prosperous research of Augmented Reality (AR) or Mixed Reality (MR) given that they are not collected at real AR scenes and do not account for affecting factors of mobile devices. This paper presents the NEAR dataset, an AR oriented visual-inertial dataset collected with commodity handheld phones with ground truth. The dataset has a total of 110 sequences in 49 elaborately designed collection cases at two typical indoor scenes, i.e. the living area and the table area. It also covers plenty of setting adjustments for comparison, including the comparisons of different level textures, illuminations, motion patterns, camera settings and the difference between the rolling shutter and the global shutter. The full dataset along with the calibration data has been publicly available [here](http://beidou.s.cn.vc/Supplier).
+The existing datasets for evaluating Visual Inertial Odometry (VIO) have boosted the research of autonomous agents, but they don’t meet the prosperous research of Augmented Reality (AR) or Mixed Reality (MR) given that they are not collected at real AR scenes and do not account for affecting factors of mobile devices. This paper presents the NEAR dataset, an AR oriented visual-inertial dataset collected with commodity handheld phones with ground truth. The dataset has a total of 113 sequences in 49 elaborately designed collection cases at two typical indoor scenes, i.e. the living area and the table area. It also covers plenty of setting adjustments for comparison, including the comparisons of different level textures, illuminations, motion patterns, camera settings and the difference between the rolling shutter and the global shutter.
 
-## Download dataset
+If you wanna acknowledge our work, please cite
 
-NEAR dataset has been publicly available [here](http://beidou.s.cn.vc/Supplier).
+1. Cheng Wang, Yu Zhao, Jiabin Guo, Ling Pei, Yue Wang, Haiwei Liu. NEAR: The NetEase AR Oriented Visual Inertial Dataset. [Accepted by ISMAR 2019].
 
 ## Case design
-
-[CaseTableEva.xlsx](CaseTableEva.xlsx) presents all the cases designed on our dataset.
 
 | case | environment | scene | lighting  | motion pattern                  | special device setting | devices and link  | preview |
 | ---- | ----------- | ----------- | ------------ | ---------- | ------------- | ------------ | -------------------------------- |
@@ -75,9 +73,22 @@ notes:
 3. "Hard" means Opened windows, mirrors, textureless floor, textureless furnitures, textureless walls, lamps.
 4. "_control" means we have an additinal MYNT camera attached to record data besides of the two mobile phones.
 
+The full list of the case design can be downloaded with [CaseTableEva.xlsx](CaseTableEva.xlsx).
+For full understand our design, please refer to our paper[1].
+
+## Tentative Grouping
+We tested some open source VIOs on our NEAR dataset tentatively. Note that the results are not for benchmarking.
+
+![Easy](grouping/Easy.png)
+
+![Medium](grouping/Medium.png)
+
+ Based on the results, we devide our dataset into several groups as below for reference.
+![group](grouping/difficulty_grouping.png)
+
 ## Dataset structure
 
-The sequences are organized following the structure of widely used EuRoC:
+The sequences are organized following the structure of the  EuRoC, so the usage is fair easy.
 
 ```
 ./Case ID
@@ -98,8 +109,4 @@ The sequences are organized following the structure of widely used EuRoC:
                 └───data.csv                    Timestamps and IMU measurements.
                 └───sensor.yaml                 IMU intrinsics and IMU-rig extrinsic which is identity.
 ```
-​						
 
-## Preview video
-
-Considering the limited storage space, we made the preview videos in very low resolution and we speed them up. We post all the preview videos [NEAR-dataset-preview-video](https://www.youtube.com/channel/UCD89MMVLJYi9ZqWKdwmGpaQ/playlists?view_as=subscriber).
