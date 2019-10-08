@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The existing datasets for evaluating Visual Inertial Odometry (VIO) have boosted the research of autonomous agents, but they don’t meet the prosperous research of Augmented Reality (AR) or Mixed Reality (MR) given that they are not collected at real AR scenes and do not account for affecting factors of mobile devices. This paper presents the NEAR dataset, an AR oriented visual-inertial dataset collected with commodity handheld phones with ground truth. The dataset has a total of 113 sequences in 49 elaborately designed collection cases at two typical indoor scenes, i.e. the living area and the table area. It also covers plenty of setting adjustments for comparison, including the comparisons of different level textures, illuminations, motion patterns, camera settings and the difference between the rolling shutter and the global shutter.
+The existing datasets for evaluating Visual Inertial Odometry (VIO) have boosted the research of autonomous agents, but they don’t meet the prosperous research of Augmented Reality (AR) or Mixed Reality (MR) given that they are not collected at real AR scenes and do not account for affecting factors of mobile devices. This paper presents the NEAR dataset, an AR oriented visual-inertial dataset collected with commodity handheld phones with ground truth[rts](http://www.realis-e.com/index.php?lang=en). The dataset has a total of 113 sequences in 49 elaborately designed collection cases at two typical indoor scenes, i.e. the living area and the table area. It also covers plenty of setting adjustments for comparison, including the comparisons of different level textures, illuminations, motion patterns, camera settings and the difference between the rolling shutter and the global shutter.
 
 If you wanna acknowledge our work, please cite
 
@@ -12,7 +12,7 @@ If you wanna acknowledge our work, please cite
 
 | case | environment | scene | lighting  | motion pattern                  | special device setting | devices and link  | preview |
 | ---- | ----------- | ----------- | ------------ | ---------- | ------------- | ------------ | -------------------------------- |
-| 1    | Easy\[1\]   | Rich\-textured desktop                   | uniform & stable      | circle \(slow\+normal\)             | default                | [iPhone 7, Huawei P20](https://beidou-sh.oss-cn-shanghai.aliyuncs.com/near_dataset/001.zip)  | ![001.gif](./preview_gif/001.gif) |
+| 1    | Easy\[1\]   | Rich\-textured desktop                   | uniform & stable      | circle \(slow\+normal\)             | default[5]                | [iPhone 7, Huawei P20](https://beidou-sh.oss-cn-shanghai.aliyuncs.com/near_dataset/001.zip)  | ![001.gif](./preview_gif/001.gif) |
 | 2    | Easy        | Rich\-textured desktop                   | uniform & stable      | hybrid                              | default                | [iPhone 7, Huawei P20](https://beidou-sh.oss-cn-shanghai.aliyuncs.com/near_dataset/002.zip)  | ![002.gif](./preview_gif/002.gif)|
 | 2_control[4] | Easy        | Rich\-textured desktop                   | uniform & stable      | hybrid                              | default                | [iPhone 7, Huawei P20, MYNT](https://beidou-sh.oss-cn-shanghai.aliyuncs.com/near_dataset/002_control.zip) | ![002.gif](./preview_gif/002_mynt.gif)|
 | 3    | Easy        | Rich\-textured desktop                   | uniform & stable      | circle \(alwayse points to center\) | default                | [iPhone 7, Huawei P20](https://beidou-sh.oss-cn-shanghai.aliyuncs.com/near_dataset/003.zip)  | ![003.gif](./preview_gif/003.gif) |
@@ -72,12 +72,15 @@ notes:
 2. "Normal" means a common livingroom settings. Median-textured carpets, sofas and walls. Some opened windows and a mirror.
 3. "Hard" means Opened windows, mirrors, textureless floor, textureless furnitures, textureless walls, lamps.
 4. "_control" means we have an additinal MYNT camera attached to record data besides of the two mobile phones.
+5. default device setting means as below.
+![default_config](default_config.png)
 
-The full list of the case design can be downloaded with [CaseTableEva.xlsx](CaseTableEva.xlsx).
+The full list of the case design can be downloaded with [CaseTableEva.xlsx](CaseTableEva.xlsx) and the better resolution preview video can be found at [NEAR-dataset-preview-video](https://www.youtube.com/channel/UCD89MMVLJYi9ZqWKdwmGpaQ/playlists?view_as=subscriber).
+
 For full understand our design, please refer to our paper[1].
 
 ## Tentative Grouping
-We tested some open source VIOs on our NEAR dataset tentatively. Note that the results are not for benchmarking.
+We tested some open source VIOs including [ICE-BA](https://github.com/baidu/ICE-BA), [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono), [OKVIS](https://github.com/ethz-asl/okvis), [ROVIO](https://github.com/pangfumin/Rovio_NoRos), [MSCKF-Mono](https://github.com/daniilidis-group/msckf_mono) on our NEAR dataset tentatively. Note that the results are not for benchmarking.
 
 ![Easy](grouping/easy.png)
 
