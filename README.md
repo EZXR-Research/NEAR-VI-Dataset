@@ -79,9 +79,9 @@ For full understand our design, please refer to our paper[1].
 ## Tentative Grouping
 We tested some open source VIOs on our NEAR dataset tentatively. Note that the results are not for benchmarking.
 
-![Easy](grouping/Easy.png)
+![Easy](grouping/easy.png)
 
-![Medium](grouping/Medium.png)
+![Medium](grouping/medium.png)
 
  Based on the results, we devide our dataset into several groups as below for reference.
 ![group](grouping/difficulty_grouping.png)
