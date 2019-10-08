@@ -12,6 +12,58 @@ NEAR dataset has been publicly available [here](http://beidou.s.cn.vc/Supplier).
 
 [CaseTableEva.xlsx](CaseTableEva.xlsx) presents all the cases designed on our dataset.
 
+| case | environment | scene                                    | lighting              | motion pattern                      | special device setting | devices               | preview                          |
+| ---- | ----------- | ---------------------------------------- | --------------------- | ----------------------------------- | ---------------------- | --------------------- | -------------------------------- |
+| 1    | Easy\[1\]   | Rich\-textured desktop                   | uniform & stable      | circle \(slow\+normal\)             | default                | iPhone 7, Huawei P20  | [001.gif](./preview_gif/001.gif) |
+| 2    | Easy        | Rich\-textured desktop                   | uniform & stable      | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 3    | Easy        | Rich\-textured desktop                   | uniform & stable      | circle \(alwayse points to center\) | default                | iPhone 7, Huawei P20  |                                  |
+| 4    | Easy        | Medium\-textured desktop                 | uniform & stable      | circle \(slow\+normal\)             | default                | iPhone 7, Huawei P20  |                                  |
+| 5    | Easy        | Medium\-textured desktop                 | uniform & stable      | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 6    | Easy        | Medium\-textured desktop with reflection | uniform & stable      | circle \(slow\+normal\)             | default                | iPhone 7, Huawei P20  |                                  |
+| 7    | Easy        | Medium\-textured desktop with reflection | uniform & stable      | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 8    | Easy        | Rich\-textured livingroom                | uniform & stable      | translation \(slow\+normal\)        | default                | iPhone 7, Huawei P20  |                                  |
+| 9    | Easy        | Rich\-textured livingroom                | uniform & stable      | circle \(slow\+normal\)             | default                | iPhone XR, OnePlus 5T |                                  |
+| 10   | Easy        | Rich\-textured livingroom                | uniform & stable      | hybrid                              | default                | iPhone XR, OnePlus 5T |                                  |
+| 11   | Easy        | Rich\-textured livingroom                | uniform & stable      | user scan simulation                | default                | iPhone XR, OnePlus 5T |                                  |
+| 12   | Normal\[2\] | Rich\-textured desktop                   | uniform & stable      | circle \(slow\+normal\+fast\)       | default                | iPhone XR, OnePlus 5T |                                  |
+| 13   | Normal      | Rich\-textured desktop                   | uniform & stable      | hybrid                              | default                | iPhone XR, OnePlus 5T |                                  |
+| 14   | Normal      | Rich\-textured desktop                   | uniform & stable      | free                                | default                | iPhone XR, OnePlus 5T |                                  |
+| 15   | Normal      | Rich\-textured desktop                   | uniform & stable      | game simulation \(YuMe\)            | default                | iPhone XR, OnePlus 5T |                                  |
+| 16   | Normal      | Medium\-textured desktop                 | uniform & stable      | circle \(slow\+normal\+fast\)       | default                | iPhone XR, OnePlus 5T |                                  |
+| 17   | Normal      | Medium\-textured desktop                 | uniform & stable      | hybrid                              | default                | iPhone XR, OnePlus 5T |                                  |
+| 18   | Normal      | Medium\-textured desktop                 | uniform & stable      | free                                | default                | iPhone XR, OnePlus 5T |                                  |
+| 19   | Normal      | Medium\-textured desktop                 | uniform & stable      | game simulation \(YuMe\)            | default                | iPhone XR, OnePlus 5T |                                  |
+| 20   | Normal      | Medium\-textured desktop                 | dynamic               | circle \(slow\+normal\+fast\)       | default                | iPhone XR, OnePlus 5T |                                  |
+| 21   | Normal      | Medium\-textured desktop                 | dynamic               | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 22   | Normal      | Medium\-textured desktop                 | dynamic               | free                                | default                | iPhone 7, Huawei P20  |                                  |
+| 23   | Normal      | Medium\-textured desktop with reflection | uniform & stable      | circle \(slow\+normal\+fast\)       | default                | iPhone 7, Huawei P20  |                                  |
+| 24   | Normal      | Medium\-textured desktop with reflection | uniform & stable      | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 25   | Normal      | Medium\-textured desktop with reflection | uniform & stable      | free                                | default                | iPhone 7, Huawei P20  |                                  |
+| 26   | Normal      | Median\-textured livingroom              | uniform & stable      | translation \(slow\+normal\+fast\)  | default                | iPhone 7, Huawei P20  |                                  |
+| 27   | Normal      | Median\-textured livingroom              | uniform & stable      | translation \(slow\+normal\+fast\)  | 30fps                  | iPhone 7, Huawei P20  |                                  |
+| 28   | Normal      | Median\-textured livingroom              | uniform & stable      | translation \(slow\+normal\+fast\)  | autofocus              | iPhone 7, Huawei P20  |                                  |
+| 29   | Normal      | Median\-textured livingroom              | uniform & stable      | circle \(slow\)                     | default                | iPhone XR, OnePlus 5T |                                  |
+| 30   | Normal      | Median\-textured livingroom              | uniform & stable      | circle \(normal\)                   | default                | iPhone XR, OnePlus 5T |                                  |
+| 31   | Normal      | Median\-textured livingroom              | uniform & stable      | circle \(fast\)                     | default                | iPhone XR, OnePlus 5T |                                  |
+| 32   | Normal      | Median\-textured livingroom              | uniform & stable      | circle \(normal\)                   | 30fps                  | iPhone XR, OnePlus 5T |                                  |
+| 33   | Normal      | Median\-textured livingroom              | uniform & stable      | circle \(normal\)                   | autofocus              | iPhone XR, OnePlus 5T |                                  |
+| 34   | Normal      | Median\-textured livingroom              | uniform & stable      | hybrid                              | default                | iPhone XR, OnePlus 5T |                                  |
+| 35   | Normal      | Median\-textured livingroom              | uniform & stable      | hybrid                              | 30fps                  | iPhone XR, OnePlus 5T |                                  |
+| 36   | Normal      | Median\-textured livingroom              | uniform & stable      | hybrid                              | autofocus              | iPhone XR, OnePlus 5T |                                  |
+| 37   | Normal      | Median\-textured livingroom              | uniform & stable      | free                                | default                | iPhone XR, OnePlus 5T |                                  |
+| 38   | Normal      | Median\-textured livingroom              | uniform & stable      | user scan simulation                | default                | iPhone XR, OnePlus 5T |                                  |
+| 39   | Normal      | Median\-textured livingroom              | uniform & stable      | game simulation \(Shot\)            | default                | iPhone 7, Huawei P20  |                                  |
+| 40   | Normal      | textureless floor and furnitures         | uniform & stable      | translation \(slow\+normal\+fast\)  | default                | iPhone 7, Huawei P20  |                                  |
+| 41   | Normal      | textureless floor and furnitures         | uniform & stable      | circle \(slow\)                     | default                | iPhone 7, Huawei P20  |                                  |
+| 42   | Normal      | textureless floor and furnitures         | uniform & stable      | circle \(normal\)                   | default                | iPhone 7, Huawei P20  |                                  |
+| 43   | Normal      | textureless floor and furnitures         | uniform & stable      | circle \(fast\)                     | default                | iPhone 7, Huawei P20  |                                  |
+| 44   | Normal      | textureless floor and furnitures         | uniform & stable      | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 45   | Normal      | textureless floor and furnitures         | uniform & stable      | free                                | default                | iPhone 7, Huawei P20  |                                  |
+| 46   | Hard\[3\]   | Rich\-textured desktop                   | non\-uniform & stable | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 48   | Hard        | Medium\-textured desktop                 | non\-uniform & stable | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 50   | Hard        | Medium\-textured desktop with reflection | non\-uniform & stable | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+| 52   | Hard        | textureless floor and furnitures         | non\-uniform & stable | hybrid                              | default                | iPhone 7, Huawei P20  |                                  |
+
 ## Dataset structure
 
 The sequences are organized following the structure of widely used EuRoC:
